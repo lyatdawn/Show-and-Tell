@@ -1,0 +1,1 @@
+test_multiple() in model.py will output the results of generated the captions and BLEU Scores.

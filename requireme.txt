@@ -1,0 +1,11 @@
+# Requirerment
+python2.7
+tensorflow==0.10.0rc0
+caffe
+keras==1.2.1
+h5py
+nltk
+scikit-image
+pandas
+glob
+opencv==2.4.9

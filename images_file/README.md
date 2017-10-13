@@ -1,0 +1,1 @@
+This is used in and test_multiple() in model.py. You can put some images in here, if you set --use_flickr False, it will generate these images' captions. Your can use Show and Tell model to generate captions for any JPEG/PNG image!

@@ -1,0 +1,1 @@
+This is used in test_single() and test_multiple() in model.py. If you just want to check out captioning, download and test the model. 
