@@ -44,10 +44,13 @@ The script will generate the captions and/or not calculate the BLEU Scores.
 ## Downloading data/trained model
 * You might want to download flickr30k dataset(images and annotations) from [here](http://web.engr.illinois.edu/~bplumme2/Flickr30kEntities/).
 * Extraced FC7 data: [download](https://drive.google.com/file/d/0B5o40yxdA9PqTnJuWGVkcFlqcG8/view?usp=sharing)
+
 &#160; &#160; &#160; &#160;This is used in train() function in model.py. You can skip feature extraction part by using this.
 * Pretrained model [download](https://drive.google.com/file/d/0B5o40yxdA9PqeW4wY0wwZXhrZkE/view?usp=sharing)
+
 &#160; &#160; &#160; &#160;This is used in test_single() and test_multiple() in model.py. If you just want to check out captioning, download and test the model.
 * Tensorflow VGG net [download](https://drive.google.com/file/d/0B5o40yxdA9PqSGtVODN0UUlaWTg/view?usp=sharing)
+
 &#160; &#160; &#160; &#160;This file is used in test_single() and test_multiple() in model.py.
 
 ## License
