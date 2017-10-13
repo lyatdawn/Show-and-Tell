@@ -4,7 +4,7 @@ Tensorflow implementation of "Show and Tell"  in the paper: http://arxiv.org/abs
 There are some modifications in model.py, see Code for details.
 * You need flickr30k data (images and annotations). You can put those in ImageCaption/data and ImageCaption/images folder respectively.
 
-##Install Required Packages
+## Install Required Packages
 First ensure that you have installed the following required packages:
 * TensorFlow 0.10.0rc0 ([instructions](https://www.tensorflow.org/install/))
 * Caffe ([instructions](http://caffe.berkeleyvision.org/installation.html))
@@ -14,7 +14,7 @@ First ensure that you have installed the following required packages:
     * Then install the NLTK data ([instructions](http://www.nltk.org/data.html))
 See requirements.txt for details.
  
-##Code
+## Code
 * make_flickr_dataset.py : Extracting feats of flickr30k images, and save them in './data/feats.npy'.
   * First, you shoule download the caffemodel and deploy.prototxt of VGG19. You can download those from here.
 * model.py : TensorFlow Version. There are some modifications in model.py:
@@ -22,7 +22,7 @@ See requirements.txt for details.
   * The test_single() in model.py is for a single image. If use_flickr=False, it just generate the caption of a image; If use_flickr=True, it will randomly pick a image and respective five reference captions from flickr30k dataset, generate the caption and calculate the BLEU Score.
   * The test_multiple() in model.py is for multiple images. If use_flickr=False, it just generate the captions of some images; If use_flickr=True, it will randomly pick some images and respective five reference captions from flickr30k dataset, generate the captions and calculate the BLEU Scores.
  
-##Getting Started
+## Getting Started
 * Training a Model
 Run the training script.
 python model.py --phase train
@@ -38,7 +38,7 @@ python model.py --phase test_multiple --use_flickr False
 The script will generate the captions and/or not calculate the BLEU Scores.
 ```
 
-##Downloading data/trained model
+## Downloading data/trained model
 * You might want to download flickr30k dataset(images and annotations) from.
 * Extraced FC7 data: [download](https://drive.google.com/file/d/0B5o40yxdA9PqTnJuWGVkcFlqcG8/view?usp=sharing)
  * This is used in train() function in model.py. You can skip feature extraction part by using this.
@@ -47,5 +47,5 @@ The script will generate the captions and/or not calculate the BLEU Scores.
 * Tensorflow VGG net [download](https://drive.google.com/file/d/0B5o40yxdA9PqSGtVODN0UUlaWTg/view?usp=sharing)
  * This file is used in test_single() and test_multiple() in model.py.
 
-##License
+## License
 * BSD license
