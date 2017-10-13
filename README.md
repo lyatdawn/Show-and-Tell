@@ -1,5 +1,5 @@
 # Neural Caption Generator
-Tensorflow implementation of "Show and Tell"  in the paper: http://arxiv.org/abs/1411.4555. The Show and Tell model is a deep neural network that learns how to describe the content of images.
+* Tensorflow implementation of "Show and Tell"  in the paper: http://arxiv.org/abs/1411.4555. The Show and Tell model is a deep neural network that learns how to describe the content of images.
 * Borrowed code and ideas from jazzsaxmafia's show_and_tell.tensorflow: https://github.com/jazzsaxmafia/show_and_tell.tensorflow.
 There are some modifications in model.py, see Code for details.
 * You need flickr30k data (images and annotations). You can put those in ImageCaption/data and ImageCaption/images folder respectively.
@@ -12,6 +12,7 @@ First ensure that you have installed the following required packages:
 * Natural Language Toolkit (NLTK):
     * First install NLTK ([instructions](http://www.nltk.org/install.html))
     * Then install the NLTK data ([instructions](http://www.nltk.org/data.html))
+
 See requirements.txt for details.
  
 ## Code
@@ -25,7 +26,9 @@ See requirements.txt for details.
 ## Getting Started
 * Training a Model
 Run the training script.
+```shell
 python model.py --phase train
+```
 The heckpoint data will be stored in the model/tensorflow folder periodically.
 * Generating Captions and/or not Calculate BLEU Scores
 Your trained Show and Tell model can generate captions for any JPEG/PNG image! The following command line will generate captions for an imaget.
@@ -39,13 +42,13 @@ The script will generate the captions and/or not calculate the BLEU Scores.
 ```
 
 ## Downloading data/trained model
-* You might want to download flickr30k dataset(images and annotations) from.
+* You might want to download flickr30k dataset(images and annotations) from [here](http://web.engr.illinois.edu/~bplumme2/Flickr30kEntities/).
 * Extraced FC7 data: [download](https://drive.google.com/file/d/0B5o40yxdA9PqTnJuWGVkcFlqcG8/view?usp=sharing)
- * This is used in train() function in model.py. You can skip feature extraction part by using this.
+&#160; &#160; &#160; &#160;This is used in train() function in model.py. You can skip feature extraction part by using this.
 * Pretrained model [download](https://drive.google.com/file/d/0B5o40yxdA9PqeW4wY0wwZXhrZkE/view?usp=sharing)
- * This is used in test_single() and test_multiple() in model.py. If you just want to check out captioning, download and test the model.
+&#160; &#160; &#160; &#160;This is used in test_single() and test_multiple() in model.py. If you just want to check out captioning, download and test the model.
 * Tensorflow VGG net [download](https://drive.google.com/file/d/0B5o40yxdA9PqSGtVODN0UUlaWTg/view?usp=sharing)
- * This file is used in test_single() and test_multiple() in model.py.
+&#160; &#160; &#160; &#160;This file is used in test_single() and test_multiple() in model.py.
 
 ## License
 * BSD license
