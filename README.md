@@ -20,8 +20,8 @@ See requirements.txt for details.
   * First, you shoule download the caffemodel and deploy.prototxt of VGG19. You can download those from here.
 * model.py : TensorFlow Version. **There are some modifications in model.py**:
   * Add some command arguments, run more convenient.
-  * The test_single() in model.py is for a single image. If use_flickr=False, it just generate the caption of a image; If use_flickr=True, it will randomly pick a image and respective five reference captions from flickr30k dataset, generate the caption and calculate the BLEU Score.
-  * The test_multiple() in model.py is for multiple images. If use_flickr=False, it just generate the captions of some images; If use_flickr=True, it will randomly pick some images and respective five reference captions from flickr30k dataset, generate the captions and calculate the BLEU Scores.
+  * The **test_single()** in model.py is for a single image. If use_flickr=False, it just generate the caption of a image; If use_flickr=True, it will randomly pick a image and respective five reference captions from flickr30k dataset, generate the caption and calculate the BLEU Score.
+  * The **test_multiple()** in model.py is for multiple images. If use_flickr=False, it just generate the captions of some images; If use_flickr=True, it will randomly pick some images and respective five reference captions from flickr30k dataset, generate the captions and calculate the BLEU Scores.
  
 ## Getting Started
 * Training a Model
@@ -45,7 +45,7 @@ The script will generate the captions and/or not calculate the BLEU Scores.
 * You might want to download flickr30k dataset(images and annotations) from [here](http://web.engr.illinois.edu/~bplumme2/Flickr30kEntities/).
 * Extraced FC7 data: [download](https://drive.google.com/file/d/0B5o40yxdA9PqTnJuWGVkcFlqcG8/view?usp=sharing). 
 This is used in train() function in model.py. You can skip feature extraction part by using this.
-* Pretrained model: [download](https://drive.google.com/file/d/0B5o40yxdA9PqeW4wY0wwZXhrZkE/view?usp=sharing). 
+* Pretrained model: [download](https://drive.google.com/drive/folders/0Bzr5eCe3vusWUDIyTkdEc2I1R0k). 
 This is used in test_single() and test_multiple() in model.py. If you just want to check out captioning, download and test the model.
 * Tensorflow VGG net: [download](https://drive.google.com/file/d/0B5o40yxdA9PqSGtVODN0UUlaWTg/view?usp=sharing). 
 This file is used in test_single() and test_multiple() in model.py.
