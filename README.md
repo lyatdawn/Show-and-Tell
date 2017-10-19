@@ -37,8 +37,8 @@ python model.py --phase test_single --use_flickr False
 python model.py --phase test_single --use_flickr True
 # The script will generate the caption and/or not calculate the BLEU Score.
 python model.py --phase test_multiple --use_flickr False
-# python model.py --phase test_multiple --use_flickr True
-The script will generate the captions and/or not calculate the BLEU Scores.
+python model.py --phase test_multiple --use_flickr True
+# The script will generate the captions and/or not calculate the BLEU Scores.
 ```
 
 ## Downloading data/trained model
