@@ -29,7 +29,7 @@ Run the training script.
 ```shell
 python model.py --phase train
 ```
-The ceckpoint data will be stored in the model/tensorflow folder periodically.
+The checkpoint data will be stored in the model/tensorflow folder periodically.
 * Generating Captions and/or not Calculate BLEU Scores
 Your trained Show and Tell model can generate captions for any JPEG/PNG image! The following command line will generate captions for an image or some images.
 ```shell
